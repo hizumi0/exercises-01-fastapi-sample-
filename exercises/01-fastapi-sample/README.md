@@ -76,3 +76,14 @@ APIにユーザ認証機能を実装してください。認証実装後は `X-A
 
 ## 問題 4
 本アプリケーションをクラウド環境(AWSやGCPなど)にデプロイするとします。そのときのシステム構成を、具体的なサービス名やコンポーネント名を使って考えてみてください。一次面接の際に質問させていただきます。
+
+
+
+1 EC2インスタンス: FastAPIアプリケーションを実行
+2 RDS (PostgreSQL): データベース
+3 Elastic Load Balancer: トラフィック分散
+4 Auto Scaling Group: EC2インスタンスの自動スケーリング
+5 Amazon S3: 静的ファイルの保存
+6 Amazon CloudFront: コンテンツ配信ネットワーク
+7 Amazon CloudWatch: モニタリングとログ管理
+8 AWS WAF: Web
